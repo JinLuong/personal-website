@@ -1,0 +1,4 @@
+HTML → CSS → Build full static site
+→ JavaScript (features/interactivity)
+→ React (refactor into components)
+
