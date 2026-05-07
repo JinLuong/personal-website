@@ -18,3 +18,42 @@
     height: 120px;
     object-fit: cover;
 }
+
+body {
+    background-color: #3A4F41;
+    color: #F5D0C5;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.pagescontainer{
+    display: flex;
+}
+
+.pagescontainer div{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-link {
+    padding: 10px 20px;
+    color: #D69F7E;
+    text-decoration: none;
+
+    background-color: transparent;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #F5D0C5;
+}
+
+a {
+   text-decoration: none;
+   color: #D69F7E;
+}
