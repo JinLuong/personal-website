@@ -1,27 +1,54 @@
+/* Project table using grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .project-card {
-    border: 3px solid black;
-    padding: 15px;
+    border: 5px solid #D69F7E;
+    border-radius: 10px;
+    padding: 20px;
 
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+
+    transition: 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
 }
 
 .project-card img {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
+    flex-shrink: 0;
+}
+/* Project table using grid */
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: #D69F7E;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-style: italic;
 }
 
 body {
     background-color: #3A4F41;
     color: #F5D0C5;
+    margin-bottom: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -29,31 +56,114 @@ body {
     margin: auto;
 }
 
+/* Nav bar */
 .pagescontainer{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    position: sticky;
+    top: 0;
 }
 
 .pagescontainer div{
+    font-weight:900;
     margin: 10px;
-    padding: 10px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 30px;
 }
 
 .nav-link {
     padding: 10px 20px;
-    color: #D69F7E;
-    text-decoration: none;
+    color: #F5D0C5;
+    text-decoration: underline;
+
 
     background-color: transparent;
 
-    transition: 0.3s;
+    transition: 0.6s;
 }
 
 .nav-link:hover {
     background-color: #F5D0C5;
+    border-radius: 20px;
+    text-decoration-style: wavy;
+    color: #D69F7E;
 }
+/* Nav bar */
 
+/* Hyperlink squiggly */
 a {
-   text-decoration: none;
+   text-decoration: underline;
    color: #D69F7E;
 }
+
+a:hover {
+    text-decoration-style: wavy;
+}
+/* Hyperlink squiggly */
+
+hr {
+    border: none;
+    height: 6px; 
+    background-color: #F5D0C5; 
+    width: 50%;
+}
+
+/* Image and text combo */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+/* Image and text combo */
+
+/* Limit line length */
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+/* Limit line length */
+
+/* Image scaling and hover */
+.gallery img {
+    object-fit: cover;
+    height: 300px;
+    width: auto;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.album img {
+    width: 16%;
+    margin: 5px;
+}
+
+.album img:hover {
+    transform: scale(1.1);
+}
+/* Image scaling and hover */
+
+/* ISAAC Shenanigans */
+.isaac-container {
+    position: relative;
+    width: 150px;
+}
+
+
+
+.isaac-gif {
+    display: none;
+}
+
+.isaac-container:hover .isaac-static {
+    display: none;
+}
+
+.isaac-container:hover .isaac-gif {
+    display: block;
+}
+/* ISAAC Shenanigans */
