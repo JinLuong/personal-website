@@ -29,6 +29,42 @@
 }
 /* Project table using grid */
 
+/* Socials grid */
+.socials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.socials-card {
+    border: 5px solid #D69F7E;
+    border-radius: 10px;
+    padding: 20px;
+
+    transition: 0.2s ease;
+}
+
+.socials-card a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.socials-card:hover {
+    transform: translateY(-4px);
+}
+
+.socials-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+/* Socials grid */
+
 h1 {
     font-size: 100px;
     font-weight: bold;
