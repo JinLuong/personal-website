@@ -169,7 +169,7 @@ hr {
     width: auto;
 }
 
-.gallery img:hover {
+.gallery img:hover:not(.enlarged) {
     transform: scale(1.1);
 }
 
@@ -178,7 +178,7 @@ hr {
     margin: 5px;
 }
 
-.album img:hover {
+.album img:hover:not(.enlarged) {
     transform: scale(1.1);
 }
 /* Image scaling and hover */
@@ -203,3 +203,14 @@ hr {
     display: block;
 }
 /* ISAAC Shenanigans */
+
+/* gallery image enlarge with js */
+.gallery-img {
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.enlarged {
+    transform: scale(2);
+}
+/* gallery image enlarge with js */
